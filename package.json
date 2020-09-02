@@ -1,0 +1,30 @@
+{
+  "name": "parcel-plugin-raw-mst",
+  "version": "0.0.2",
+  "description": "Import Mustache templates as strings in your JS using Parcel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blex41/parcel-plugin-raw-mst.git"
+  },
+  "keywords": [
+    "parcel",
+    "plugin",
+    "mst",
+    "mustache",
+    "raw",
+    "string"
+  ],
+  "author": "blex41",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blex41/parcel-plugin-raw-mst/issues"
+  },
+  "homepage": "https://github.com/blex41/parcel-plugin-raw-mst#readme",
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  }
+}
