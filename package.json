@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-raw-mst",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Import Mustache templates as strings in your JS using Parcel",
   "main": "index.js",
   "scripts": {

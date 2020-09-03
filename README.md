@@ -10,13 +10,7 @@ npm i -D parcel-plugin-raw-mst
 
 ## Usage
 
-Now, you can simply `require` files with an `.mst` extension, which will be parsed as strings:
-
-```js
-const peopleTemplate = require('./people.mst');
-```
-
-## Example
+Whenever you `require` files with an `.mst` extension, they will be parsed as strings. For example:
 
 **people.mst**
 
@@ -31,10 +25,10 @@ const peopleTemplate = require('./people.mst');
 **index.js**
 
 ```js
-const Mustache = require('mustache');
-const template = require('./people.mst');
+const Mustache = require("mustache");
+const template = require("./people.mst");
 
-const view = { people: [{ name: 'Jane' }, { name: 'John' }] };
+const view = { people: [{ name: "Jane" }, { name: "John" }] };
 
 console.log(Mustache.render(template, view));
 // <ul>
@@ -42,3 +36,20 @@ console.log(Mustache.render(template, view));
 //   <li>John</li>
 // </ul>
 ```
+
+## Options
+
+To override the default options, create a `.rawMst.js` file at the root of your project, which exports an object. For example:
+
+```js
+module.exports = {
+  minify: process.env.NODE_ENV === "production",
+};
+```
+
+### minify
+
+> type: Boolean  
+> default: false
+
+Replaces line-breaks and consecutive spaces with a single space.
